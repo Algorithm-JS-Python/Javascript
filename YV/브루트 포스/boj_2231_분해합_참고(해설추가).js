@@ -25,4 +25,4 @@ for (let i=start; i<num; i++) {
         break;
     }
 }
-// console.log(answer);
+console.log(answer);
