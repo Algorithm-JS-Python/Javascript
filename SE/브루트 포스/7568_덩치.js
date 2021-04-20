@@ -4,8 +4,8 @@ const fs = require('fs');
 const [n, ...arr] = require("fs").readFileSync("7568.txt").toString().trim().split("\r\n");
 const men = arr.map(v => ({weight: v.split(" ")[0], height: v.split(" ")[1], rank: 1}));
 
-console.log(n)  // 5
-console.log(arr)
+// console.log(n)  // 5
+// console.log(arr)
 console.log(men)
 
 for (let i=0; i < men.length; i++) {
@@ -13,6 +13,8 @@ for (let i=0; i < men.length; i++) {
         if (i !== j && men[i].weight < men[j].weight && men[i].height < men[j].height) men[i].rank++;
     }
 }
+// console.log(men)
+// men.map(i => console.log(i.rank));
 console.log(men.map(i => i.rank).join(" "));
 
 

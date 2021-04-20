@@ -31,6 +31,8 @@ test.slice(-4, -1)
 
 ## 결과 가로 출력
 
+방법 1
+
 ```javascript
 // 결과 가로출력
 let space = " "
@@ -39,6 +41,36 @@ for (let i = 0; i < result.length; i++) {
 }
 console.log(space)
 ```
+
+
+
+방법 2
+
+```javascript
+const men = [
+  { weight: '55', height: '185', rank: 2 },
+  { weight: '58', height: '183', rank: 2 },
+  { weight: '88', height: '186', rank: 1 },
+  { weight: '60', height: '175', rank: 2 },
+  { weight: '46', height: '155', rank: 5 }
+]
+
+men.map(i => console.log(i.rank));
+// 결과 (숫자)
+2
+2
+1
+2
+5
+
+console.log(men.map(i => i.rank).join(" "));
+// 결과 (문자)
+// 2 2 1 2 5
+```
+
+
+
+
 
 <br>
 
